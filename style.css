@@ -5,26 +5,30 @@ body {
     grid-gap: 10px;
     align-items: center;
     grid-template-areas:
-    "header header header header"
-    "menu content content content"
-    "footer footer footer footer"
+    "header header header header header header"
+    "menu content content content content content"
+    "footer footer footer footer footer footer"
     ;
 }
 
 header {
     display: inline-flex;
     justify-content: center;
+    background: linear-gradient(90deg, rgb(121, 4, 4), black) ;
+    box-shadow: 5px 10px 5px rgb(10, 10, 10);
 }
 .titulo {
     font-size: 100px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 5px 5px #000;
 }
 
  
 
 .item {
-    background-color: rgba(17, 17, 17, 0.788);
-    padding: 10px;
-    border-radius: 10px;
+    background-color: rgb(121, 4, 4);
+    padding: 0;
+    border-radius: 5px;
     color: white;
     font-size: 20px;
 }
@@ -122,6 +126,98 @@ aside {
  
   }
 
+  section {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+  }
+  
+
+  .container-left {
+    display: flex;
+    border-radius: 5px;
+    margin-right: 10px;
+    position: relative;
+    transition: all .6s;
+    
+   
+  }
+
+  .container-left img {
+    object-fit: cover;
+    width: 48vw;
+    height: 100vh;
+    border-radius: 5px;
+    
+  }
+
+  .container-right {
+    flex: 1;
+    object-fit: contain;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-right: 5px;
+    
+    
+  }
+
+  .container-right img {
+    object-fit: cover;
+    flex: 1;
+    height: 100vh;
+    width: 100%;
+    
+  
+  }
+
+  .subtitulo {
+    display: block;
+    background:linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.753));
+    color: white;
+    position: absolute;
+    bottom:1px;
+    width: 100%;
+    transition: ease-in-out 2s linear;
+    
+    
+    
+  }
+
+  .subtitulo:hover {
+    opacity: 2;
+    background:linear-gradient(rgba(7, 7, 7, 0.253), rgba(206, 44, 3, 0.329));
+    -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.1);   
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.1);
+        transition: all 200ms ease-in;
+        transform: scale(1.1);
+    
+  }
+
+  h1, p {
+    margin-left: 30px;
+  }
+ 
+  h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+  }
+
+  p {
+   font-size: 19px;
+   margin-top: 0;
+   margin-bottom: 30px;
+  }
+  
+
+  footer {
+    background: linear-gradient(90deg, rgb(121, 4, 4), black) ;
+  }
 
 
 
