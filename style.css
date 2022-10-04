@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    background-color: white;
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    grid-template-areas:
+    "header header header header"
+    "menu content content content"
+    "footer footer footer footer"
+    ;
+}
+
+header {
+    display: inline-flex;
+    justify-content: center;
+}
+.titulo {
+    font-size: 100px;
+}
+
+ 
+
+.item {
+    background-color: rgba(17, 17, 17, 0.788);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+aside {
+    display: flex;
+    justify-content: start;
+    align-content: flex-start;
+    top:100px;
+    right:0;
+    z-index:999;
+    height: 100vh;
+    display:flex;
+    background-color: #0707074f;
+ }
+
+ nav a {
+    display: block;
+   
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color:#1b1b1b63;
+    color: white;
+    border-radius: 5px;
+    
+  }
+
+  .menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  section {
+    height: 100vh ;
+  }
+
+  #menu-opener {
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    margin-top:10px;
+    margin-right:10px;
+ }
+ #menu-area {
+    width:0px;
+    height:auto;
+    margin-top: 20px;
+    background:rgba(194, 10, 10, 0.342);
+    overflow-x:hidden;
+    overflow-y:auto;
+    transition: all ease .5s;
+ }
+ #menu-area ul, #menu-area li {
+    padding:0;
+    list-style:none;
+ }
+ #menu-area li {
+    display:block;
+    padding:10px;
+    color:#555;
+    cursor:pointer;
+ }
+ #menu-area li:hover {
+    background:rgba(177, 8, 8, 0.651);
+ }
+ 
+ 
+ nav ul,
+ nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+ nav ul{
+    display: flex;
+    flex-direction: column;
+ }
+ nav a {
+    display: block;
+   
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color:#1b1b1b63;
+    color: white;
+    border-radius: 5px;
+    
+  }
+ 
+  nav :active a,
+  nav a:hover {
+    background-color: red;
+    animation: backwards;
+ 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: menu;
+    
+}
+
+.menu {
+    list-style: none;
+    text-decoration: underline none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
