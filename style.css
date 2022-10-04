@@ -13,16 +13,42 @@ body {
 
 header {
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
     background: linear-gradient(90deg, rgb(121, 4, 4), black) ;
     box-shadow: 5px 10px 5px rgb(10, 10, 10);
 }
 .titulo {
     font-size: 100px;
+    margin-right: 400px;
+    margin-left: 500px;
     font-family: 'Lobster', cursive;
     text-shadow: 1px 5px 5px #000;
 }
 
+header .logo  img{
+  display: inline-flex;
+  position: absolute;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-top: 25px;
+ 
+}
+.logo-1 {
+  z-index: 1;
+  display: inline-flex;
+  position: absolute;
+  left: 90px;
+  top: 30px;
+}
+
+.logo-2 {
+  z-index: 1;
+  display: inline-flex;
+  position: absolute;
+  left: 90px;
+  top: 70px;
+}
  
 
 .item {
@@ -217,6 +243,11 @@ aside {
 
   footer {
     background: linear-gradient(90deg, rgb(121, 4, 4), black) ;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 10px;
   }
 
 
